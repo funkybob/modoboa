@@ -7,8 +7,6 @@ This module provides support to retrieve statistics from postfix log :
 sent, received, bounced, rejected
 
 """
-import sys
-
 from django.utils.translation import ugettext_lazy
 
 from modoboa.core.extensions import ModoExtension, exts_pool
@@ -31,5 +29,6 @@ class Stats(ModoExtension):
             ParametersForm, ugettext_lazy("Graphical statistics")
         )
         from modoboa.extensions.stats import general_callbacks
+
 
 exts_pool.register_extension(Stats)

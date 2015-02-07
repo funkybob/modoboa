@@ -1,5 +1,4 @@
 # coding: utf-8
-from datetime import date
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import ugettext as _
 from modoboa.lib.web_utils import (
